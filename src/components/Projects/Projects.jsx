@@ -22,7 +22,7 @@ const Projects = () => <Section nopadding id='projects'>
   <GridContainer>
     {projects.map((p, index) => (
       <BlogCard key={index}>
-        <Image style={{"object-fit": "cover" ,"overflow": "hidden"}} src={p.image} alt={p.alt}/>
+        <Image src={p.image} alt={p.alt} width={640} height={360}/>
         <TitleContent>
           <HeaderThree title='true'>{p.title}</HeaderThree>
           <Hr />
