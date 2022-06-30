@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Image from 'next/image'
 import {
   BlogCard,
   CardInfo,
@@ -10,8 +11,7 @@ import {
   Tag,
   TagList,
   TitleContent,
-  UtilityList,
-  Img
+  UtilityList
 } from './ProjectsStyles'
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents'
 import { projects } from '../../constants/constants'
@@ -22,7 +22,7 @@ const Projects = () => <Section nopadding id='projects'>
   <GridContainer>
     {projects.map((p, index) => (
       <BlogCard key={index}>
-        <Img src={p.image} />
+        <Image style={{"object-fit": "cover" ,"overflow": "hidden"}} src={p.image} alt={p.alt}/>
         <TitleContent>
           <HeaderThree title='true'>{p.title}</HeaderThree>
           <Hr />
