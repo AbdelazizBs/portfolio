@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
-export const Img = styled.img`
-  width:100%;
-  height:100%;
-  object-fit: cover;
-  overflow: hidden;
-`
+// export const Img = styled.img`
+//   width:100%;
+//   height:100%;
+//   object-fit: cover;
+//   overflow: hidden;
+// `
 
 export const GridContainer = styled.section`
 display: grid;
@@ -70,7 +70,6 @@ export const CardInfo = styled.p`
   width: 100%;
   padding: 0 50px;
   color: #e4e6e7;
-  font-style: 2rem;
   line-height: 24px;
   text-align: justify;
   @media ${(props) => props.theme.breakpoints.sm} {
