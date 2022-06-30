@@ -11,36 +11,34 @@ import {
   DropDownTextContainer
 } from './NavDropDown'
 
-function NavDropDown({ isOpen }) {
-  return <DropDownContainer active={isOpen}>
-    <DropDownItem href='#' target='_blank' rel='noreferrer'>
-      <DropDownIcon>
-        <AiFillPhone />
-      </DropDownIcon>
-      <DropDownTextContainer>
-        <DropDownItemTitle>Phone</DropDownItemTitle>
-        <DropDownItemDesc>Let&apos;s get together and have a chat?&apos;</DropDownItemDesc>
-      </DropDownTextContainer>
-    </DropDownItem>
-    <DropDownItem href='#' target='_blank' rel='noreferrer'>
-      <DropDownIcon>
-        <AiOutlineMail />
-      </DropDownIcon>
-      <DropDownTextContainer>
-        <DropDownItemTitle>Email</DropDownItemTitle>
-        <DropDownItemDesc>If you want to talk jus send a message and I&apos;ll get back</DropDownItemDesc>
-      </DropDownTextContainer>
-    </DropDownItem>
-    <DropDownItem href='#' target='_blank' rel='noreferrer'>
-      <DropDownIcon>
-        <FaLocationArrow />
-      </DropDownIcon>
-      <DropDownTextContainer>
-        <DropDownItemTitle>Address</DropDownItemTitle>
-        <DropDownItemDesc>1405, Angelus Dr, Florissant. Mo</DropDownItemDesc>
-      </DropDownTextContainer>
-    </DropDownItem>
-  </DropDownContainer>
-}
+const NavDropDown = ({ isOpen }) => <DropDownContainer active={isOpen}>
+  <DropDownItem href='#' target='_blank' rel='noreferrer'>
+    <DropDownIcon>
+      <AiFillPhone />
+    </DropDownIcon>
+    <DropDownTextContainer>
+      <DropDownItemTitle>Phone</DropDownItemTitle>
+      <DropDownItemDesc>Let&apos;s get together and have a chat?&apos;</DropDownItemDesc>
+    </DropDownTextContainer>
+  </DropDownItem>
+  <DropDownItem href='#' target='_blank' rel='noreferrer'>
+    <DropDownIcon>
+      <AiOutlineMail />
+    </DropDownIcon>
+    <DropDownTextContainer>
+      <DropDownItemTitle>Email</DropDownItemTitle>
+      <DropDownItemDesc>If you want to talk jus send a message and I&apos;ll get back</DropDownItemDesc>
+    </DropDownTextContainer>
+  </DropDownItem>
+  <DropDownItem href='#' target='_blank' rel='noreferrer'>
+    <DropDownIcon>
+      <FaLocationArrow />
+    </DropDownIcon>
+    <DropDownTextContainer>
+      <DropDownItemTitle>Address</DropDownItemTitle>
+      <DropDownItemDesc>1405, Angelus Dr, Florissant. Mo</DropDownItemDesc>
+    </DropDownTextContainer>
+  </DropDownItem>
+</DropDownContainer>
 
 export default NavDropDown

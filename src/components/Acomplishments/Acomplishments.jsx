@@ -10,8 +10,7 @@ const data = [
   { number: 5000, text: 'Github Stars' }
 ]
 
-function Acomplishments() {
-  return <Section>
+const Acomplishments = () => <Section>
     <SectionTitle>Personal Achievements</SectionTitle>
     <Boxes>
       {data.map((card, index) => (
@@ -23,6 +22,5 @@ function Acomplishments() {
     </Boxes>
     <SectionDivider />
   </Section>
-}
 
 export default Acomplishments

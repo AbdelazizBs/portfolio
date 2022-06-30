@@ -1,9 +1,8 @@
 import Theme from '../styles/theme'
 
-export default function App({ Component, pageProps }) {
-  return (
+const App = ({ Component, pageProps }) => (
     <Theme>
       <Component {...pageProps} />
     </Theme>
   )
-}
+export default App

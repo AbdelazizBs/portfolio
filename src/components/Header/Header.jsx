@@ -5,8 +5,7 @@ import { DiCssdeck } from 'react-icons/di'
 
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons } from './HeaderStyles'
 
-function Header() {
-  return <Container>
+const Header = () => <Container>
     <Div1>
       <Link href='/'>
         <a style={{ display: 'flex', alignItems: 'center', color: 'white' }}>
@@ -43,6 +42,5 @@ function Header() {
       </SocialIcons>
     </Div3>
   </Container>
-}
 
 export default Header
