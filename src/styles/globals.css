@@ -2,3 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+.footerUl {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: grid;
+    grid-template-columns: repeat(3, minmax(85px, 220px));
+    gap: 40px;
+    padding: 40px 0 28px;
+}
+
+@media (max-width: 1024px) {
+    .footerUl {
+        padding: 32px 0 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footerUl {
+        width: 100%;
+        padding: 32px 0 16px;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 540px) {
+    .footerUl {
+        width: 100%;
+        padding: 32px 4px 16px;
+        gap: 5px;
+    }
+}
+
