@@ -48,7 +48,7 @@ export const Div3 = styled.div`
 // Navigation Links
 export const NavLink = styled.a`
   font-size: 2rem;
-  line-height: 32px;
+  line-height: 28px;
   color: rgba(255, 255, 255, 0.75);
   transition: 0.4s ease;
 
@@ -127,32 +127,27 @@ export const SocialIcons = styled.a`
   }
 `
 export const Listed = styled.ul`
-  margin-top: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
   display: flex;
   list-style: none;
   justify-content: normal;
-
+  margin-left: 20px;
+  margin-top: 10px;
   @media ${(props) => props.theme.breakpoints.sm} {
-    justify-content: center;
-    padding-left: 0;
-    padding-right: 0;
-    text-align: right;
+    text-align: center;
+    margin: 0 auto;
   }
   @media ${(props) => props.theme.breakpoints.md} {
     padding-left: 1rem;
-    padding-right: 1rem;
-    
   }
 `
 export const ListItem = styled.li`
   list-style: none;
-  padding-left: 4rem;
+  padding-left: 2rem;
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding-left: 2rem;
+    padding-left: 0.5rem;
     @media ${(props) => props.theme.breakpoints.md} {
-      padding-left: 3rem;
+      padding-left: 2rem;
+
     }
   }
 `
