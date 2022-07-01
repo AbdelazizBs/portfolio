@@ -129,16 +129,21 @@ export const SocialIcons = styled.a`
 export const Listed = styled.ul`
   margin-top: 1rem;
   padding-left: 2rem;
-  padding-right: 3.5rem;
+  padding-right: 2rem;
   display: flex;
   list-style: none;
   justify-content: normal;
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding-right: 10em;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: right;
   }
   @media ${(props) => props.theme.breakpoints.md} {
-    padding-left: 12rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
   }
 `
 export const ListItem = styled.li`
