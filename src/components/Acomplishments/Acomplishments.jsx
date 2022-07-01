@@ -1,7 +1,6 @@
 import React from 'react'
 
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents'
-import { BoxNum, BoxText } from './AcomplishmentsStyles'
 
 const data = [
   { number: 20, text: 'Open Source Projects' },
@@ -20,7 +19,8 @@ const Acomplishments = () => <Section>
         key={index}>
         <h5
           className='font-semibold tracking-spec text-white mb-2 xl:text-4xl lg:text-4xl md:text-3xl sm:text-2xl xs:text-xl'>{`${card.number}+`}</h5>
-        <p className='font-normal tracking-wide text-white opacity-75 lg:text-3xl md:text-2xl sm:text-xl xs:text-lg'>{card.text}</p>
+        <p
+          className='font-normal tracking-wide text-white opacity-75 lg:text-3xl md:text-2xl sm:text-xl xs:text-lg'>{card.text}</p>
       </div>
     ))}
   </div>
