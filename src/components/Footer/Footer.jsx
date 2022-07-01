@@ -1,16 +1,6 @@
 import React from 'react'
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai'
-
 import { SocialIcons } from '../Header/HeaderStyles'
-import {
-  CompanyContainer,
-  LinkColumn,
-  LinkList,
-  Slogan,
-  SocialContainer,
-  SocialIconsContainer
-} from './FooterStyles'
-import styled from 'styled-components'
 
 const Footer = () => (
   <section className="max-w-[1040px] sm:w-[calc(100vw_-_96px)] my-4 mx-auto content-box sm:pt-8 sm:px-12 sm:pb-10 content-box xs:w-[calc(100vw_-_32px)] xs:pt-0 xs:px-4 xs:pb-12">
