@@ -1,12 +1,5 @@
 import styled from 'styled-components';
 
-// export const Img = styled.img`
-//   width:100%;
-//   height:100%;
-//   object-fit: cover;
-//   overflow: hidden;
-// `
-
 export const GridContainer = styled.section`
 display: grid;
 grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -88,6 +81,7 @@ export const UtilityList = styled.ul`
 `;
 
 export const ExternalLinks = styled.a`
+  width: 100%;
 color:#d4c0c0;
 font-size: 1.6rem;
 padding:1rem 1.5rem;
@@ -101,7 +95,7 @@ transition: 0.5s;
 `;
 
 export const TagList = styled.ul`
-display: flex;
+display: grid;
 justify-content: space-around;
 padding: 2rem;
 `

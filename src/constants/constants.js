@@ -1,43 +1,37 @@
 export const projects = [
   {
+    title: 'AdsWatcher Platform',
+    description: '"AdsWatcher" is a search engine for classified ads in Tunisia. This platform allows you to find good opportunities in a short time.\n' +
+      'simplify the search and display the results among hundreds of thousands of ads indexed on Tunisia classifieds websites as well as on social networks in a single search with a unique experience.' +
+      'Also you get notifications about new desired ads in your area.',
+    image: '/images/adsWatcher.png',
+    tags: ['NextJs', 'Zustand', 'Node', 'Express', 'PostgreSQL'],
+    id: 0,
+    alt: 'AdsWatcher'
+  },
+  {
     title: 'MERN Memories',
     description: 'Using React, Node.js, Express & MongoDB you\'ll learn how to build a Full Stack MERN Application - from start to finish. The App is called Memories and it is a simple social media app that allows users to post interesting events that happened in their lives.',
     image: '/images/1.png',
-    tags: ['Mongo', 'Express', 'React', 'Node'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
-    id: 0,
+    tags: ['MongoDB', 'Express', 'React', 'Node'],
+    id: 1,
     alt: 'MERN Memories'
   },
   {
-    title: 'E-Commerce',
-    description: 'While building it you\'re going to learn many advanced React & JavaScript topics, as well as how to use Stripe for card transactions. On top of that, at the end of the video, you will have this unique and complex webshop app that you will be able to add to your portfolio. And trust me, e-commerce applications are impressive.',
-    image: '/images/2.png',
-    tags: ['React', 'JavaScript'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
-    id: 1,
-    alt: 'E-Commerce'
-  },
-  {
-    title: 'WebRTC App',
-    description: 'This is a code repository for the corresponding YouTube video. In this tutorial, we\'re going to build and deploy a React Video Chat Application using WebRTC.',
+    title: 'Traffic sign recognition',
+    description: 'This project is a simple traffic sign recognition system. It uses a neural network to recognize traffic signs. It is a simple project that I undertook during my studies at the University. The project was developed in python and it was used in the course "Machine Learning"',
     image: '/images/3.jpg',
-    tags: ['React', 'WebRTC'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
+    tags: ['Python', 'TensorFlow','Flask'],
     id: 2,
-    alt: 'WebRTC App'
+    alt: 'Traffic sign recognition'
   },
   {
-    title: 'Unichat',
-    description: 'This is a code repository for the corresponding video tutorial. In this video, we will create a full Realtime Chat Application',
+    title: 'Covid-19 Tracker',
+    description: 'This project is a simple Covid-19 tracker. It uses a API to get the latest data about Covid-19 cases in the world or in a specific country' ,
     image: '/images/4.jpg',
-    tags: ['React', 'ChatEngine', 'Firebase'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
+    tags: ['React'],
     id: 3,
-    alt: 'Unichat'
+    alt: 'Covid-19 Tracker'
   }
 ]
 
