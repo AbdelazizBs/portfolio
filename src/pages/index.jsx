@@ -13,6 +13,7 @@ const Home = () => (
     <Head>
       <title>Portfolio</title>
       <meta charSet='UTF-8' />
+      <meta property="og:image" content="/images/Bassem.jpg" />
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       <meta name='description' content='Web developer portfolio' />
       <meta name='keywords' content='HTML, CSS, JavaScript' />

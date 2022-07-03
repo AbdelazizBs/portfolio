@@ -3,7 +3,6 @@ import React from 'react'
 import { AiFillGithub, AiFillLinkedin, AiFillFacebook } from 'react-icons/ai'
 import { DiCssdeck } from 'react-icons/di'
 
-import Image from 'next/image'
 import { Container, Div1, Div2, Div3, Listed, ListItem, NavLink, SocialIcons } from './HeaderStyles'
 
 const Header = () => <Container>
@@ -11,7 +10,6 @@ const Header = () => <Container>
     <Link href='/'>
       <a style={{ display: 'flex', alignItems: 'center', color: 'white' }}>
         <DiCssdeck size='3rem' /> <span>Portfolio</span>
-        <div className='hideImg'><Image src='/images/Bassem.jpg' alt='logo' width={300} height={400} /></div>
       </a>
     </Link>
   </Div1>
