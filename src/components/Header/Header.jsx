@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import { AiFillGithub, AiFillLinkedin,AiFillFacebook } from 'react-icons/ai'
+import { AiFillGithub, AiFillLinkedin, AiFillFacebook } from 'react-icons/ai'
 import { DiCssdeck } from 'react-icons/di'
 
 import Image from 'next/image'
@@ -11,7 +11,7 @@ const Header = () => <Container>
     <Link href='/'>
       <a style={{ display: 'flex', alignItems: 'center', color: 'white' }}>
         <DiCssdeck size='3rem' /> <span>Portfolio</span>
-        <Image src='/images/Bassem.jpg' alt='logo' width={0} height={0} />
+        <div className='hideImg'><Image src='/images/Bassem.jpg' alt='logo' width={300} height={400} /></div>
       </a>
     </Link>
   </Div1>
@@ -38,10 +38,10 @@ const Header = () => <Container>
     <SocialIcons href='https://github.com/dimassibassem' target='_blank'>
       <AiFillGithub size='3rem' />
     </SocialIcons>
-    <SocialIcons href='https://www.linkedin.com/in/dimassibassem/' target="_blank">
+    <SocialIcons href='https://www.linkedin.com/in/dimassibassem/' target='_blank'>
       <AiFillLinkedin size='3rem' />
     </SocialIcons>
-    <SocialIcons href='https://www.facebook.com/Dimassi.Bassem/' target="_blank">
+    <SocialIcons href='https://www.facebook.com/Dimassi.Bassem/' target='_blank'>
       <AiFillFacebook size='3rem' />
     </SocialIcons>
   </Div3>
