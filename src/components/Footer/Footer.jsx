@@ -1,5 +1,5 @@
 import React from 'react'
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai'
+import { AiFillFacebook, AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import { SocialIcons } from '../Header/HeaderStyles'
 
 const Footer = () => (
@@ -7,12 +7,12 @@ const Footer = () => (
     <ul className="footerUl">
       <div className="flex flex-col max-w-[220px] w-full">
         <h4 className="font-semibold sm:text-xl text-white opacity-40 sm:mb-4 xs:text-base xs:mb-2">CALL</h4>
-        <a className="text-white opacity-75 mb-4 duration-300 relative left-0 hover:opacity-100 hover:left-1.5 lg:text-3xl md:text-2xl sm:text-xl xs:text-base xs:mb-2 xs:flex xs:text-center" href='tel:314-343-3432'>314-343-3432</a>
+        <a className="text-white opacity-75 mb-4 duration-300 relative left-0 hover:opacity-100 hover:left-1.5 lg:text-3xl md:text-2xl sm:text-xl xs:text-base xs:mb-2 xs:flex xs:text-center" href='tel:+21626003021'>+216 26 003 021</a>
       </div>
       <div className="flex flex-col max-w-[220px] w-full">
         <h4 className="font-semibold sm:text-xl text-white opacity-40 sm:mb-4 xs:text-base xs:mb-2">EMAIL</h4>
-        <a className="text-white opacity-75 mb-4 duration-300 relative left-0 hover:opacity-100 hover:left-1.5 lg:text-3xl md:text-2xl sm:text-xl xs:text-base xs:mb-2 xs:flex xs:text-center" href='mailto:contact@jsmastery.com'>
-          contact@jsmastery.com
+        <a className="text-white opacity-75 mb-4 duration-300 relative left-0 hover:opacity-100 hover:left-1.5 lg:text-3xl md:text-2xl sm:text-xl xs:text-base xs:mb-2 xs:flex xs:text-center" href='mailto:dimassibassem99@gmail.com' target='_blank' rel="noreferrer">
+          dimassibassem99@gmail.com
         </a>
       </div>
     </ul>
@@ -22,14 +22,14 @@ const Footer = () => (
         <p className="text-white p-4 tracking-wide opacity-50 sm:min-w-[280px] md:text-3xl sm:text-2xl xs:min-w-[100px] xs:text-xl ">Innovating one project at a time</p>
       </div>
       <div className="flex items-center xs:p-4 xs:justify-center xs:flex-wrap">
-        <SocialIcons href='https://google.com'>
+        <SocialIcons href='https://github.com/dimassibassem' target='_blank'>
           <AiFillGithub size='3rem' />
         </SocialIcons>
-        <SocialIcons href='https://google.com'>
+        <SocialIcons href='https://www.linkedin.com/in/dimassibassem/' target='_blank'>
           <AiFillLinkedin size='3rem' />
         </SocialIcons>
-        <SocialIcons href='https://google.com'>
-          <AiFillInstagram size='3rem' />
+        <SocialIcons href='https://www.facebook.com/Dimassi.Bassem/' target='_blank'>
+          <AiFillFacebook size='3rem' />
         </SocialIcons>
       </div>
     </div>

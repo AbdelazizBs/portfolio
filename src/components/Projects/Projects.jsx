@@ -18,7 +18,7 @@ const Projects = () => <Section nopadding id='projects'>
   <SectionTitle main>Projects</SectionTitle>
   <GridContainer>
     {projects.map((p, index) => <BlogCard key={index}>
-      <Image src={p.image} alt={p.alt} width={640} height={360} />
+      <Image quality="100" loading="lazy" src={p.image} alt={p.alt} width={640} height={360} />
       <TitleContent>
         <HeaderThree title='true'>{p.title}</HeaderThree>
         <Hr />
