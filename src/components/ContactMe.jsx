@@ -1,7 +1,33 @@
 import { MailIcon, PhoneIcon } from '@heroicons/react/outline'
+import { useState } from 'react'
 import { SectionTitle } from '../styles/GlobalComponents'
 
+const axios = require('axios')
+
 export default function ContactMe() {
+  const [state, setState] = useState(
+    {
+      fullName: '',
+      email: '',
+      phone: '',
+      message: ''
+    }
+  )
+const [isSubmitted, setIsSubmitted] = useState(false)
+  const handleChange = (e) => {
+    setState({
+      ...state,
+      [e.target.name]: e.target.value
+    })
+  }
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    await axios.post('/api/mailer', state)
+    setIsSubmitted(true)
+  }
+
+
+
   return (
     <div className="pt-16" id='contactMe'>
       <SectionTitle>Contact Me</SectionTitle>
@@ -32,7 +58,7 @@ export default function ContactMe() {
         </div>
         <div className='bg-gray-200 py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12'>
           <div className='max-w-lg mx-auto lg:max-w-none'>
-            <form action='#' method='POST' className='grid grid-cols-1 gap-y-6'>
+            <form action='#' method='POST' className='grid grid-cols-1 gap-y-6' onSubmit={handleSubmit} >
               <div>
                 {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
                 <label htmlFor='full-name' className='sr-only'>
@@ -40,11 +66,12 @@ export default function ContactMe() {
                 </label>
                 <input
                   type='text'
-                  name='full-name'
+                  name='fullName'
                   id='full-name'
                   autoComplete='name'
-                  className='bg-gray-200 block w-full drop-shadow py-3 px-4 placeholder-gray-500 focus:ring-[#adafb4] focus:border-[#adafb4] border-[#adafb4] rounded-md'
+                  className='text-[#212d45] bg-gray-200 block w-full drop-shadow py-3 px-4 placeholder-gray-500 focus:ring-[#adafb4] focus:border-[#adafb4] border-[#adafb4] rounded-md'
                   placeholder='Full name'
+                  onChange={handleChange}
                 />
               </div>
               <div>
@@ -57,8 +84,9 @@ export default function ContactMe() {
                   name='email'
                   type='email'
                   autoComplete='email'
-                  className='bg-gray-200 block w-full drop-shadow py-3 px-4 placeholder-gray-500 focus:ring-[#adafb4] focus:border-[#adafb4] border-gray-300 rounded-md'
+                  className='text-[#212d45] bg-gray-200 block w-full drop-shadow py-3 px-4 placeholder-gray-500 focus:ring-[#adafb4] focus:border-[#adafb4] border-gray-300 rounded-md'
                   placeholder='Email'
+                  onChange={handleChange}
                 />
               </div>
               <div>
@@ -71,8 +99,9 @@ export default function ContactMe() {
                   name='phone'
                   id='phone'
                   autoComplete='tel'
-                  className='bg-gray-200 block w-full drop-shadow py-3 px-4 placeholder-gray-500 focus:ring-[#adafb4] focus:border-[#adafb4] border-gray-300 rounded-md'
+                  className='text-[#212d45] bg-gray-200 block w-full drop-shadow py-3 px-4 placeholder-gray-500 focus:ring-[#adafb4] focus:border-[#adafb4] border-gray-300 rounded-md'
                   placeholder='Phone'
+                  onChange={handleChange}
                 />
               </div>
               <div>
@@ -84,9 +113,10 @@ export default function ContactMe() {
                   id='message'
                   name='message'
                   rows={4}
-                  className='bg-gray-200 block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-[#adafb4] focus:border-[#adafb4] border border-gray-300 rounded-md'
+                  className='text-[#212d45] bg-gray-200 block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-[#adafb4] focus:border-[#adafb4] border border-gray-300 rounded-md'
                   placeholder='Message'
                   defaultValue=''
+                  onChange={handleChange}
                 />
               </div>
               <div>
