@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents'
+import ContactMe from '../ContactMe'
 
 
 const data = [
@@ -42,6 +43,7 @@ const Acomplishments = () => <Section>
     ))}
   </div>
   <SectionDivider />
+  <ContactMe />
 </Section>
 
 
