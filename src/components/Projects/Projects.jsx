@@ -32,7 +32,7 @@ const Projects = () =>
       {projects.map((p, index) =>
 
         <SwiperSlide key={index} className='rounded-xl shadow-md shadow-amber-50 bg-[#212d45]'>
-          <img className='w-full h-[20rem] ' src={p.image} alt={p.alt} />
+          <img className='w-full h-[20rem] bg-slate-300 ' src={p.image} alt={p.alt} />
           <TitleContent>
             <HeaderThree title={p.title}>{p.title}</HeaderThree>
             <Hr />

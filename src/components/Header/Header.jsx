@@ -25,13 +25,13 @@ const Header = () => <Container>
     </Listed>
   </Div2>
   <Div3>
-    <SocialIcons href='https://github.com/dimassibassem' target='_blank'>
+    <SocialIcons className='hidden md:block' href='https://github.com/dimassibassem' target='_blank'>
       <AiFillGithub size='3rem' />
     </SocialIcons>
-    <SocialIcons href='https://www.linkedin.com/in/dimassibassem/' target='_blank'>
+    <SocialIcons className='hidden md:block' href='https://www.linkedin.com/in/dimassibassem/' target='_blank'>
       <AiFillLinkedin size='3rem' />
     </SocialIcons>
-    <SocialIcons href='https://www.facebook.com/Dimassi.Bassem/' target='_blank'>
+    <SocialIcons className='hidden md:block' href='https://www.facebook.com/Dimassi.Bassem/' target='_blank'>
       <AiFillFacebook size='3rem' />
     </SocialIcons>
   </Div3>

@@ -3,7 +3,7 @@ import { SectionTitle } from '../styles/GlobalComponents'
 
 export default function ContactMe() {
   return (
-    <div className="pt-16">
+    <div className="pt-16" id='contactMe'>
       <SectionTitle>Contact Me</SectionTitle>
       <div className='relative mx-auto lg:grid lg:grid-cols-5'>
         <div className='bg-[#212d45] py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12'>

@@ -6,7 +6,7 @@ import ContactMe from '../ContactMe'
 
 const data = [
   {
-    number: 'MICROSOFT DYNAMICS 365 FUNDAMENTALS FINANCE AND OPERATIONS APPS (ERP)',
+    number: 'MICROSOFT DYNAMICS 365 FUNDAMENTALS (ERP)',
     text: 'https://portal.certiport.com/Portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=479&cvid=qEKO/7kll24Xk371lrKHVg=='
   },
   {
@@ -18,10 +18,14 @@ const data = [
     text: 'https://freecodecamp.org/certification/bassemdimassi/javascriptalgorithms-and-data-structures'
   },
   {
-    number: 'PROGRAMMING FOUNDATIONS WITH JAVASCRIPT HTML AND CSS',
+    number: 'PROGRAMMING FOUNDATIONS',
     text: 'https://www.coursera.org/account/accomplishments/verify/KA7A3733V329'
   },
-  { number: 'PYTHON DATA STRUCTURES', text: 'https://www.coursera.org/account/accomplishments/verify/G2D698X42DEA' }
+  { number: 'PYTHON DATA STRUCTURES', text: 'https://www.coursera.org/account/accomplishments/verify/G2D698X42DEA' },
+  {
+    number: 'CYBERSECURITY BASICS',
+    text:"https://www.netacad.com/portal/letters_certificates/generate_certificate/2034458/0/1015942133"
+  }
 ]
 const Acomplishments = () => <Section>
   <SectionTitle>Personal Achievements</SectionTitle>

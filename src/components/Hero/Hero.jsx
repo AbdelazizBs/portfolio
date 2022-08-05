@@ -4,17 +4,18 @@ import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponent
 import Button from '../../styles/GlobalComponents/Button'
 import { LeftSection } from './HeroStyles'
 
-const Hero = ({ handleClick }) => <Section row nopadding>
+const Hero = () => <Section row nopadding>
   <LeftSection>
     <SectionTitle main center>
-      Welcome To <br />
-      My Personal Portfolio
+    Hi there 👋,<br/>
+      I&apos;m <span className='text-primary'>Bassem Dimassi</span>
     </SectionTitle>
     <SectionText>
-      The purpose of JavaScript Mastery is to help aspiring and established developers to take their development
-      skills to the next level and build awesome apps.
+     Web developer with a passion for building innovative web applications.
     </SectionText>
-    <Button onClick={handleClick}>Learn More</Button>
+    <Button onClick={() => {
+      window.scrollTo(0, document.getElementById('contactMe').getBoundingClientRect().top)
+    }}>Get in Touch</Button>
   </LeftSection>
 </Section>
 

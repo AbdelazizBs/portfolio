@@ -20,7 +20,7 @@ const TimeLine = () => {
   const [activeItem, setActiveItem] = useState(0)
   const carouselRef = useRef()
 
-  const scroll = (node, left) => node.scrollTo({ left, behavior: 'smooth' })
+  const scroll = (node, left) => node?.scrollTo({ left, behavior: 'smooth' })
 
   const handleClick = (e, i) => {
     e.preventDefault()
@@ -40,8 +40,6 @@ const TimeLine = () => {
     }
   }
 
-  // snap back to beginning of scroll when window is resized
-  // avoids a bug where content is covered up if coming from smaller screen
   useEffect(() => {
     const handleResize = () => {
       scroll(carouselRef.current, 0)
@@ -54,7 +52,9 @@ const TimeLine = () => {
     <Section id='about'>
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-        I am passionate with web development and I have experience in web scraping. I like to work on innovative projects and constantly strive to improve my knowledge.
+        Developer with wide range of languages but ❤️ JavaScript.
+        Passionate with web development and I have experience in scraping websites.
+        I like to work on innovative projects and constantly strive to improve my knowledge.
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
