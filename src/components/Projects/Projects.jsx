@@ -24,7 +24,7 @@ const Projects = () =>
       effect='cards'
       grabCursor
       modules={[EffectCards]}
-      className='xs:w-[25rem] sm:w-[30rem] md:w-[35rem] lg:w-[50rem] xl:w-[50rem]'
+      className='xs:w-[30rem] sm:w-[35rem] md:w-[40rem] lg:w-[50rem] xl:w-[50rem]'
     >
       {projects.map((p, index) =>
         <SwiperSlide className='bg-[#212d45]'>
