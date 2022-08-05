@@ -1,6 +1,7 @@
 import { MailIcon, PhoneIcon } from '@heroicons/react/outline'
 import { useState } from 'react'
 import { SectionTitle } from '../styles/GlobalComponents'
+import { useStore } from '../store'
 
 const axios = require('axios')
 
@@ -13,7 +14,8 @@ export default function ContactMe() {
       message: ''
     }
   )
-const [isSubmitted, setIsSubmitted] = useState(false)
+  const setIsSubmitted = useStore(store => store.setIsSubmitted)
+
   const handleChange = (e) => {
     setState({
       ...state,
@@ -22,22 +24,23 @@ const [isSubmitted, setIsSubmitted] = useState(false)
   }
   const handleSubmit = async (e) => {
     e.preventDefault()
-   const res = await axios.post('/api/mailer', state)
-    setIsSubmitted(res.data)
-    console.log(isSubmitted)
+    const res = await axios.post('/api/mailer', state)
+    if (res.data.success) {
+      setIsSubmitted(true)
+    }
   }
 
 
-
   return (
-    <div className="pt-16" id='contactMe'>
+    <div className='pt-16' id='contactMe'>
       <SectionTitle>Contact Me</SectionTitle>
       <div className='relative mx-auto lg:grid lg:grid-cols-5'>
         <div className='bg-[#212d45] py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12'>
           <div className='max-w-lg mx-auto'>
             <h2 className='text-3xl font-extrabold tracking-tight text-white sm:text-4xl'>Get in touch</h2>
             <p className='mt-3 text-2xl  text-gray-300'>
-              I&apos;m currently looking for new opportunities. If you&apos;re interested in working together, feel free to reach out.
+              I&apos;m currently looking for new opportunities. If you&apos;re interested in working together, feel free
+              to reach out.
             </p>
             <dl className='mt-8 text-lg text-gray-300'>
               <div className='mt-6'>
@@ -59,7 +62,7 @@ const [isSubmitted, setIsSubmitted] = useState(false)
         </div>
         <div className='bg-gray-200 py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12'>
           <div className='max-w-lg mx-auto lg:max-w-none'>
-            <form action='#' method='POST' className='grid grid-cols-1 gap-y-6' onSubmit={handleSubmit} >
+            <form action='#' method='POST' className='grid grid-cols-1 gap-y-6' onSubmit={handleSubmit}>
               <div>
                 {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
                 <label htmlFor='full-name' className='sr-only'>
