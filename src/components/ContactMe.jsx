@@ -34,6 +34,7 @@ export default function ContactMe() {
           <div className='max-w-lg mx-auto lg:max-w-none'>
             <form action='#' method='POST' className='grid grid-cols-1 gap-y-6'>
               <div>
+                {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
                 <label htmlFor='full-name' className='sr-only'>
                   Full name
                 </label>
@@ -47,6 +48,7 @@ export default function ContactMe() {
                 />
               </div>
               <div>
+                {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
                 <label htmlFor='email' className='sr-only'>
                   Email
                 </label>
@@ -60,6 +62,7 @@ export default function ContactMe() {
                 />
               </div>
               <div>
+                {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
                 <label htmlFor='phone' className='sr-only'>
                   Phone
                 </label>
@@ -73,6 +76,7 @@ export default function ContactMe() {
                 />
               </div>
               <div>
+                {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
                 <label htmlFor='message' className='sr-only'>
                   Message
                 </label>
@@ -82,7 +86,7 @@ export default function ContactMe() {
                   rows={4}
                   className='bg-gray-200 block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-[#adafb4] focus:border-[#adafb4] border border-gray-300 rounded-md'
                   placeholder='Message'
-                  defaultValue={''}
+                  defaultValue=''
                 />
               </div>
               <div>
