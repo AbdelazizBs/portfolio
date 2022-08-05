@@ -1,8 +1,11 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
-// Import Swiper styles
+
+// eslint-disable-next-line import/no-unresolved
 import 'swiper/css'
+
+// eslint-disable-next-line import/no-unresolved
 import 'swiper/css/effect-cards'
 
 // import required modules
