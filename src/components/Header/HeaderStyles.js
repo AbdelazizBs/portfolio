@@ -58,7 +58,7 @@ export const NavLink = styled.a`
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding: 0.5rem;
+    padding: 0.25rem;
   }
 `
 
@@ -81,7 +81,7 @@ export const Listed = styled.ul`
   display: flex;
   list-style: none;
   justify-content: normal;
-  margin-left: 20px;
+  margin-left: 10px;
   margin-top: 10px;
   @media ${(props) => props.theme.breakpoints.sm} {
     text-align: center;
@@ -95,9 +95,9 @@ export const ListItem = styled.li`
   list-style: none;
   padding-left: 2rem;
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding-left: 0.5rem;
+    padding-left: 0.25rem;
     @media ${(props) => props.theme.breakpoints.md} {
-      padding-left: 2rem;
+      padding-left: 1rem;
 
     }
   }
