@@ -10,17 +10,13 @@ import 'swiper/css/effect-cards'
 
 // import required modules
 import { EffectCards } from 'swiper'
-import Image from 'next/image'
 import {
-  BlogCard,
   CardInfo,
   ExternalLinks,
-  GridContainer,
   HeaderThree,
-  Hr,
-  TitleContent
+  Hr
 } from './ProjectsStyles'
-import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents'
+import { SectionTitle } from '../../styles/GlobalComponents'
 import { projects } from '../../constants/constants'
 
 const Projects = () =>
@@ -35,9 +31,9 @@ const Projects = () =>
       className='xs:w-[25rem] sm:w-[30rem] md:w-[35rem] lg:w-[50rem] xl:w-[50rem]'
     >
       {projects.map((p, index) =>
-        <SwiperSlide className="bg-[#212d45]">
+        <SwiperSlide className='bg-[#212d45]'>
           <div key={index}>
-            <img className="w-full h-[20rem] " src={p.image} alt={p.alt} />
+            <img className='w-full h-[20rem] ' src={p.image} alt={p.alt} />
             <div>
               <HeaderThree title='true'>{p.title}</HeaderThree>
               <Hr />
