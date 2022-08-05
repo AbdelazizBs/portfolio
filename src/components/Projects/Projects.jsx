@@ -24,7 +24,7 @@ const Projects = () =>
       effect='cards'
       grabCursor
       modules={[EffectCards]}
-      className=' xs:w-[40rem] sm:w-[43rem] md:w-[45rem] lg:w-[50rem] xl:w-[50rem]'
+      className=' w-[25rem] xs:w-[30rem] sm:w-[30rem] md:w-[35rem] lg:w-[40rem] xl:w-[50rem]'
     >
 
       {projects.map((p, index) =>
