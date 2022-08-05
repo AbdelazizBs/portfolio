@@ -24,6 +24,7 @@ const [isSubmitted, setIsSubmitted] = useState(false)
     e.preventDefault()
     await axios.post('/api/mailer', state)
     setIsSubmitted(true)
+    console.log(isSubmitted)
   }
 
 
