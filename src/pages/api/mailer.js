@@ -21,15 +21,18 @@ export default (req, res) => {
     text: `Message: ${message} \n\n Email: ${email} \n\n Phone: ${phone}`
   }
 
-  transporter.sendMail(mailOptions, (error, info) => {
+  transporter.sendMail(mailOptions, (error) => {
     if (error) {
-      console.log(error)
+      res.status(200).json({
+        success: false,
+        message: error
+      })
     } else {
-      console.log(`Email sent: ${info.response}`)
+      res.status(200).json({
+        success: true,
+        message: 'Message sent successfully'
+      })
     }
   })
-  res.status(200).json({
-    success: true,
-    message: 'Message sent successfully'
-  })
+
 }
