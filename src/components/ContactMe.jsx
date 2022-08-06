@@ -1,11 +1,12 @@
 import { MailIcon, PhoneIcon } from '@heroicons/react/outline'
 import { useState } from 'react'
 import { SectionTitle } from '../styles/GlobalComponents'
-import { useStore } from '../store'
+import Modal from './Modal'
 
 const axios = require('axios')
 
 export default function ContactMe() {
+  const [open, setOpen] = useState(false)
   const [state, setState] = useState(
     {
       fullName: '',
@@ -14,7 +15,6 @@ export default function ContactMe() {
       message: ''
     }
   )
-  const setIsSubmitted = useStore(store => store.setIsSubmitted)
 
   const handleChange = (e) => {
     setState({
@@ -26,7 +26,7 @@ export default function ContactMe() {
     e.preventDefault()
     const res = await axios.post('/api/mailer', state)
     if (res.data.success) {
-      setIsSubmitted(true)
+      setOpen(true)
     }
   }
 
@@ -135,6 +135,7 @@ export default function ContactMe() {
           </div>
         </div>
       </div>
+      <Modal open={open} setOpen={setOpen} />
     </div>
   )
 }

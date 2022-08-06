@@ -1,11 +1,9 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment, useState } from 'react'
+import { Fragment } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { CheckIcon } from '@heroicons/react/outline'
 
-export default function Modal({setIsSubmitted}) {
-  const [open, setOpen] = useState(true)
-
+export default function Modal({open,setOpen}) {
   return (
     <Transition.Root show={open} as={Fragment}>
       <Dialog as="div" className="relative z-10 " onClose={setOpen}>
@@ -32,7 +30,7 @@ export default function Modal({setIsSubmitted}) {
               leaveFrom="opacity-100 translate-y-0 sm:scale-100"
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
-              <Dialog.Panel className="relative bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:max-w-sm sm:w-full sm:p-6">
+              <Dialog.Panel className="relative bg-white rounded-lg px-10 py-8 text-left overflow-hidden shadow-xl transform transition-all ">
                 <div>
                   <div className="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-green-100">
                     <CheckIcon className="h-6 w-6 text-green-600" aria-hidden="true" />
@@ -43,8 +41,8 @@ export default function Modal({setIsSubmitted}) {
                     </Dialog.Title>
                     <div className="mt-2">
                       <p className="text-2xl text-gray-500">
-                        Thank you for reaching out.
-                        I will get back to you as soon as possible.
+                        <h3>Thank you for reaching out.</h3>
+                        <h3>I will get back to you as soon as possible.</h3>
                       </p>
                     </div>
                   </div>
@@ -52,10 +50,9 @@ export default function Modal({setIsSubmitted}) {
                 <div className="mt-5 sm:mt-6">
                   <button
                     type="button"
-                    className="inline-flex justify-center w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-600 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:text-sm"
+                    className="inline-flex justify-center w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-600 text-xl font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                     onClick={() => {
                       setOpen(false)
-                      setIsSubmitted(false)
                     }}
                   >
                     Close
