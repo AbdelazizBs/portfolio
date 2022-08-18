@@ -58,6 +58,6 @@ export const TimeLineData = [
   { year: 2018, text: 'Got my baccalaureate' },
   { year: 2018, text: 'Start the integrated preparatory cycle at epi Sousse' },
   { year: 2020, text: 'Start the computer engineering cycle' },
-  { year: 2023, text: 'Will be graduated' },
+  { year: 2023, text: 'Will be graduated from the university' }
   // { year: 2021, text: 'Started my own platform' }
 ]
