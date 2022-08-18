@@ -13,7 +13,7 @@ export const projects = [
   {
     title: 'Justech website',
     description: 'This is a website I built for a local company. ' +
-      'I built this website to showcase their services with a dashboard for the admin and charts for the users.',
+      'I built this website to showcase their services with a dashboard for the admin and chat for the users.',
     image: '/images/justech.png',
     tags: ['NextJs', '.NET', 'MSSQL', 'TailwindCSS'],
     id: 4,
