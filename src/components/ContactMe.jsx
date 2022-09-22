@@ -1,5 +1,6 @@
 import { MailIcon, PhoneIcon } from '@heroicons/react/outline'
 import { useState } from 'react'
+import { ThreeDots } from 'react-loader-spinner'
 import { SectionTitle } from '../styles/GlobalComponents'
 import Modal from './Modal'
 
@@ -7,6 +8,7 @@ const axios = require('axios')
 
 export default function ContactMe() {
   const [open, setOpen] = useState(false)
+  const [loading, setLoading] = useState(false)
   const [state, setState] = useState(
     {
       fullName: '',
@@ -24,9 +26,11 @@ export default function ContactMe() {
   }
   const handleSubmit = async (e) => {
     e.preventDefault()
+    setLoading(true)
     const res = await axios.post('/api/mailer', state)
     if (res.data.success) {
       setOpen(true)
+      setLoading(false)
     }
   }
 
@@ -124,12 +128,21 @@ export default function ContactMe() {
                 />
               </div>
               <div>
-                <button
+                {!loading ? <button
                   type='submit'
                   className='inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-lg font-medium rounded-md text-white bg-sky-800 hover:bg-sky-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#adafb4]'
                 >
                   Submit
-                </button>
+                </button> : <ThreeDots
+                  height='80'
+                  width='80'
+                  radius='9'
+                  color='#0877b9'
+                  ariaLabel='three-dots-loading'
+                  wrapperStyle={{}}
+                  wrapperClassName=''
+                  visible
+                />}
               </div>
             </form>
           </div>

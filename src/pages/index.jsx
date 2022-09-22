@@ -23,7 +23,7 @@ const Home = () => {
   return (
     <Layout>
       <Head>
-        <title>Portfolio</title>
+        <title>Portfolio Bassem Dimassi</title>
         <meta charSet='UTF-8' />
         <meta property='og:image' content='/images/PortfolioBassem.jpg' />
         <meta property="og:title" content="Portfolio Bassem Dimassi" />
