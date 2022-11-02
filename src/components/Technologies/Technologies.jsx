@@ -5,7 +5,7 @@ const Technologies = () => <Section id='tech'>
   <SectionDivider divider />
   <SectionTitle>Technologies</SectionTitle>
   <SectionText>
-    I&apos;ve worked with a range a technologies in the web development world.
+    I&apos;ve worked with a wide range of technologies in the web development world.
   </SectionText>
 
     <img className='hidden md:block pb-8'
