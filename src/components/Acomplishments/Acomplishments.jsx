@@ -27,7 +27,8 @@ const data = [
     text:"https://www.netacad.com/portal/letters_certificates/generate_certificate/2034458/0/1015942133"
   }
 ]
-const Acomplishments = () => <Section>
+const Acomplishments = () =>
+  <Section>
   <SectionTitle>Personal Achievements</SectionTitle>
   <div
     className='w-full grid lg:grid-cols-3 gap-8 mt-6 mb-10 lg:gap-8 md:gap-6 md:mt-5 md:grid-cols-3 sm:gap-[1.25rem] sm:mt-[1.5rem] xs:gap-6 xs:grid-cols-2'>

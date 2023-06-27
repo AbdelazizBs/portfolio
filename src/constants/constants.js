@@ -1,5 +1,13 @@
 export const projects = [
-
+  {
+    title: 'Modeler UI',
+    description: 'Modeler UI is a web application that allows you to create and edit banking processes using a drag and drop interface. ' +
+      'It is a project that I undertook during my internship at "Proxym-It". ' +
+      'This project will be integrated into the "Bankerise" platform.',
+    image: '/images/modelerUI.jpeg',
+    tags: ['React', 'Zustand', 'React-Flow', 'React-joyride','TailwindCSS'],
+    id: 10
+  },
   {
     title: 'AdsWatcher Platform',
     description: '"AdsWatcher" is a search engine for classified ads in Tunisia. The consept is to help the user to find the best ad for his needs by scraping many websites. ' +
@@ -56,8 +64,8 @@ export const projects = [
 
 export const TimeLineData = [
   { year: 2018, text: 'Got my baccalaureate' },
-  { year: 2018, text: 'Start the integrated preparatory cycle at epi Sousse' },
+  { year: 2018, text: 'Start the integrated preparatory cycle at EPI Sousse' },
   { year: 2020, text: 'Start the computer engineering cycle' },
-  { year: 2023, text: 'Will be graduated from the university' }
+  { year: 2023, text: 'Graduate as a computer engineer' }
   // { year: 2021, text: 'Started my own platform' }
 ]

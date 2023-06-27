@@ -9,12 +9,14 @@
     "start": "next start"
   },
   "dependencies": {
-    "@headlessui/react": "^1.6.6",
+    "@headlessui/react": "^1.7.15",
     "@heroicons/react": "^1.0.6",
-    "@prisma/client": "^4.1.1",
+    "@prisma/client": "^4.16.1",
     "axios": "^0.27.2",
+    "formik": "^2.4.2",
+    "framer-motion": "^10.12.17",
     "next": "12.2.0",
-    "nodemailer": "^6.7.7",
+    "nodemailer": "^6.9.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "4.4.0",
@@ -22,15 +24,15 @@
     "sharp": "0.30.7",
     "styled-components": "5.3.5",
     "styled-normalize": "^8.0.7",
-    "swiper": "^8.3.2",
-    "tailwindcss": "3.1.4"
+    "swiper": "^8.4.7",
+    "tailwindcss": "3.3.2"
   },
   "devDependencies": {
     "autoprefixer": "10.4.7",
     "eslint": "8.18.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-next": "12.2.0",
-    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-import": "2.26.0",
     "eslint-plugin-jsx-a11y": "6.6.0",
     "eslint-plugin-prettier": "4.2.1",
@@ -38,7 +40,7 @@
     "eslint-plugin-react-hooks": "4.6.0",
     "postcss": "8.4.14",
     "prettier": "2.7.1",
-    "prisma": "^4.1.1"
+    "prisma": "^4.16.1"
   },
   "prettier": {
     "singleQuote": true,
