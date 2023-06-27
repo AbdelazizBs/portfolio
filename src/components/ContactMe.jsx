@@ -1,43 +1,24 @@
 import { MailIcon, PhoneIcon } from '@heroicons/react/outline'
 import { useState } from 'react'
 import { ThreeDots } from 'react-loader-spinner'
+import { Formik } from 'formik'
+import { motion } from 'framer-motion'
 import { SectionTitle } from '../styles/GlobalComponents'
 import Modal from './Modal'
-import { Formik } from 'formik'
 
 const axios = require('axios')
 
 export default function ContactMe() {
   const [open, setOpen] = useState(false)
   const [loading, setLoading] = useState(false)
-  const [state, setState] = useState(
-    {
-      fullName: '',
-      email: '',
-      phone: '',
-      message: ''
-    }
-  )
-
-  // const handleChange = (e) => {
-  //   setState({
-  //     ...state,
-  //     [e.target.name]: e.target.value
-  //   })
-  // }
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault()
-  //   setLoading(true)
-  //   const res = await axios.post('/api/mailer', state)
-  //   if (res.data.success) {
-  //     setOpen(true)
-  //     setLoading(false)
-  //   }
-  // }
-
-
   return (
     <div className='pt-16' id='contactMe'>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.5}}
+        viewport={{once: false}}
+      >
       <SectionTitle>Contact Me</SectionTitle>
       <div className='relative mx-auto lg:grid lg:grid-cols-5'>
         <div className='bg-[#212d45] py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12'>
@@ -212,6 +193,7 @@ export default function ContactMe() {
         </div>
       </div>
       <Modal open={open} setOpen={setOpen} />
+      </motion.div>
     </div>
   )
 }

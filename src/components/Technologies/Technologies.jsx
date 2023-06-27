@@ -1,7 +1,15 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents'
 
-const Technologies = () => <Section id='tech'>
+const Technologies = () =>
+  <Section id='tech'>
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.5}}
+      viewport={{once: false}}
+    >
   <SectionDivider divider />
   <SectionTitle>Technologies</SectionTitle>
   <SectionText>
@@ -24,6 +32,7 @@ const Technologies = () => <Section id='tech'>
          src='https://skillicons.dev/icons?i=js,ts,bootstrap,tailwind,next,vercel,flask,redux' alt='technologies' />
 
   <SectionDivider colorAlt />
+    </motion.div>
 </Section>
 
 export default Technologies

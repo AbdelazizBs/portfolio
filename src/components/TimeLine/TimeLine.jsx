@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 
+import { motion } from 'framer-motion'
 import {
   CarouselButton,
   CarouselButtonDot,
@@ -50,6 +51,12 @@ const TimeLine = () => {
 
   return (
     <Section id='about'>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.5}}
+        viewport={{once: false}}
+      >
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
         Developer with wide range of languages but ❤️ JavaScript.
@@ -119,6 +126,7 @@ const TimeLine = () => {
         ))}
       </CarouselButtons>
       <SectionDivider />
+      </motion.div>
     </Section>
   )
 }

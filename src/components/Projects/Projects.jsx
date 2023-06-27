@@ -6,6 +6,7 @@ import 'swiper/css/effect-cards'
 
 // import required modules
 import { EffectCards } from 'swiper'
+import { motion } from 'framer-motion'
 import {
   CardInfo,
   ExternalLinks,
@@ -17,7 +18,12 @@ import { projects } from '../../constants/constants'
 
 const Projects = () =>
   <div id='projects'>
-
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.5}}
+      viewport={{once: false}}
+    >
     <Section>
       <SectionTitle main>Projects</SectionTitle>
     </Section>
@@ -44,12 +50,14 @@ const Projects = () =>
                 <div key={i + i + 1} className='flex-nowrap'><ExternalLinks key={i}>{t}</ExternalLinks></div> :
                 <div key={i + i + 1} className='flex-wrap'><ExternalLinks key={i}>{t}</ExternalLinks></div>)}
             </ul>
+
           </div>
         </SwiperSlide>
+
       )}
 
     </Swiper>
-
+    </motion.div>
   </div>
 
 export default Projects
