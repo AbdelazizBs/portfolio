@@ -33,14 +33,14 @@ export default function ContactMe() {
                 <dt className='sr-only'>Phone number</dt>
                 <dd className='flex'>
                   <PhoneIcon className='flex-shrink-0 text-2xl  h-8 w-8 text-gray-100' aria-hidden='true' />
-                  <span className='ml-3 text-2xl '>+216 26 003 021</span>
+                  <span className='ml-3 text-2xl '>+216 98 421 295</span>
                 </dd>
               </div>
               <div className='mt-3'>
                 <dt className='sr-only'>Email</dt>
                 <dd className='flex'>
                   <MailIcon className='flex-shrink-0  h-8 w-8 text-gray-100' aria-hidden='true' />
-                  <span className='ml-3 text-2xl '>dimassibassem99@gmail.com</span>
+                  <span className='ml-3 text-2xl '>bensalemabdelaziz97@gmail.com</span>
                 </dd>
               </div>
             </dl>

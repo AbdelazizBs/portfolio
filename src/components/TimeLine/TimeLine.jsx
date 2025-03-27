@@ -59,7 +59,7 @@ const TimeLine = () => {
       >
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-        Developer with wide range of languages but ❤️ JavaScript.
+        Developer with wide range of languages but ❤️ JAVA & JavaScript.
         Passionate with web development and I have experience in scraping websites.
         I like to work on innovative projects and constantly strive to improve my knowledge.
       </SectionText>

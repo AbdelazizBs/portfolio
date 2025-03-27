@@ -23,16 +23,16 @@ const Home = () => {
   return (
     <Layout>
       <Head>
-        <title>Portfolio Bassem Dimassi</title>
+        <title>Portfolio Abdelaziz Ben Salem</title>
         <meta charSet='UTF-8' />
         <meta property='og:image' content='/images/PortfolioBassem.jpg' />
-        <meta property="og:title" content="Portfolio Bassem Dimassi" />
+        <meta property="og:title" content="Portfolio Abdelaziz Ben Salem" />
         <meta property="og:description" content="Web developer portfolio" />
         <meta property="og:type" content="website" />
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
         <meta name='description' content='Web developer portfolio' />
         <meta name='keywords' content='HTML, CSS, JavaScript' />
-        <meta name='author' content='Bassem Dimassi' />
+        <meta name='author' content='Abdelaziz Ben Salem' />
       </Head>
       <Section grid>
         <Hero />

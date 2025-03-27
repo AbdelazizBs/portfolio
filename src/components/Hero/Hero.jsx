@@ -8,7 +8,7 @@ const Hero = () =>
   <LeftSection>
     <SectionTitle main center>
     Hi there 👋,<br/>
-      I&apos;m <span className='text-primary'>Bassem Dimassi</span>
+      I&apos;m <span className='text-primary'>Abdelaziz Ben Salem</span>
     </SectionTitle>
     <SectionText>
      Web developer with a passion for building innovative web applications.
