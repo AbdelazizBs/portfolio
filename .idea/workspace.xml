@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="41a6d184-b5e0-40dc-997b-011bcd1ee4f1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Acomplishments/Acomplishments.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Acomplishments/Acomplishments.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1743099727797</updated>
-      <workItem from="1743099728935" duration="12164000" />
+      <workItem from="1743099728935" duration="12460000" />
     </task>
     <servers />
   </component>
