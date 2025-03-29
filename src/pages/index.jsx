@@ -25,7 +25,7 @@ const Home = () => {
       <Head>
         <title>Portfolio Abdelaziz Ben Salem</title>
         <meta charSet='UTF-8' />
-        <meta property='og:image' content='/images/PortfolioBassem.jpg' />
+        <meta property='og:image' content='/images/PortfolioBassem.png' />
         <meta property="og:title" content="Portfolio Abdelaziz Ben Salem" />
         <meta property="og:description" content="Web developer portfolio" />
         <meta property="og:type" content="website" />
