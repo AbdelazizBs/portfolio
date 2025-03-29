@@ -1,75 +1,71 @@
 export const projects = [
-/*  {
-    title: 'Modeler UI',
-    description: 'Modeler UI is a web application that allows you to create and edit banking processes using a drag and drop interface. ' +
-      'It is a project that I undertook during my internship at "Proxym-It". ' +
-      'This project will be integrated into the "Bankerise" platform.',
-    image: '/images/modelerUI.jpeg',
-    tags: ['React', 'Zustand', 'React-Flow', 'React-joyride','TailwindCSS'],
-    id: 10
-  },*/
-/*  {
-    title: 'Modeler UI',
-    description: 'Modeler UI is a web application that allows you to create and edit banking processes using a drag and drop interface. ' +
-      'It is a project that I undertook during my internship at "Proxym-It". ' +
-      'This project will be integrated into the "Bankerise" platform.',
-    image: '/images/modelerUI.jpeg',
-    tags: ['React', 'Zustand', 'React-Flow', 'React-joyride','TailwindCSS'],
-    id: 10
-  },*/
+  {
+    title: 'Computer-Aided Production Management System',
+    description: 'Designed and developed a production management application to optimize manufacturing workflows. ' +
+      'Implemented a CI/CD pipeline with Jenkins and Docker for automated deployment.',
+    image: '/images/gpao.png',
+    tags: ['Spring Boot','WebSockets', 'Angular','JAVA 17','Scrum','Git', 'Jenkins', 'Docker'],
+    id: 6,
+    alt: 'Production Management System'
+  },
   {
     title: 'AdsWatcher Platform',
-    description: '"AdsWatcher" is a search engine for classified ads in Tunisia. The consept is to help the user to find the best ad for his needs by scraping many websites. ' +
-      'Users can search for ads by category, location, price, etc. ' +
-      'Also they get notified by e-mail when a new ad is published with the same criteria.',
+    description: '"AdsWatcher" is a search engine for classified ads in Tunisia. The concept is to help users find the best ad for their needs by scraping multiple websites. ' +
+      'Users can search by category, location, and price, and receive email notifications when new ads match their criteria.',
     image: '/images/adsWatcher.png',
     tags: ['NextJs', 'Zustand', 'Node.js', 'Express', 'PostgreSQL'],
     id: 0,
     alt: 'AdsWatcher'
   },
-/*  {
-    title: 'Justech website',
-    description: 'This is a website I built for a local company. ' +
-      'I built this website to showcase their services with a dashboard for the admin and chat for the users.',
-    image: '/images/justech.png',
-    tags: ['NextJs', '.NET', 'MSSQL', 'TailwindCSS'],
-    id: 4,
-    alt: 'Justech'
-  },*/
-/*  {
-    title: 'Books scraper',
-    description: 'An API that allows you to get information about books from many sources worldwide.\n' +
-      'This task was done for the company that I work for as an intern.',
-    image: '/images/webScraping.png',
-    tags: ['JAVA', 'Selenium', 'WebScraping'],
-    id: 6
-  },*/
 
-/*  {
-    title: 'Traffic sign recognition',
-    description: 'This project is a simple traffic sign recognition system. It uses a neural network to recognize traffic signs. It is a simple project that I undertook during my studies at the University. The project was developed in python and it was used in the course "Artificial Intelligence".',
-    image: '/images/3.jpg',
-    tags: ['Python', 'TensorFlow', 'Flask'],
-    id: 2,
-    alt: 'Traffic sign recognition'
-  },*/
-/*  {
-    title: 'MERN Memories',
-    description: 'Using React, Node.js, Express & MongoDB I learn how to build a Full Stack MERN Application - from start to finish. The App is called Memories and it is a simple social media app that allows users to post interesting events that happened in their lives.',
-    image: '/images/1.png',
-    tags: ['MongoDB', 'Express', 'React', 'Node.js'],
-    id: 1,
-    alt: 'MERN Memories'
-  },*/
+  // {
+  //   title: 'Payroll Tax Configuration System',
+  //   description: 'A backend system automating payroll tax calculations and compliance management. ' +
+  //     'Built with Spring Boot and Angular, it streamlines tax rule definitions and report generation.',
+  //   image: '/images/payroll.png',
+  //   tags: ['Spring Boot', 'Angular', 'PostgreSQL'],
+  //   id: 4,
+  //   alt: 'Payroll Tax System'
+  // },
+  {
+    title: 'Inventory & Accounting Management System',
+    description: 'A full-stack solution for inventory tracking and financial reporting. ' +
+      'Developed with Java and Angular, it optimizes business operations with real-time data updates.',
+    image: '/images/navex.png',
+    tags: ['Spring Boot', 'Angular','Spring Security', 'PostgreSQL'],
+    id: 5,
+    alt: 'Inventory Management System'
+  },
+
+  {
+    title: 'Order & Stock Management APIs',
+    description: 'Developed RESTful APIs using Spring Boot for efficient order and stock management. ' +
+      'Designed endpoints for inventory tracking, order processing, and real-time updates.',
+    image: '/images/navex.png',
+    tags: ['Spring Boot', 'REST API','Spring Security', 'PostgreSQL'],
+    id: 7,
+    alt: 'Order & Stock Management APIs'
+  }
+  ,
   {
     title: 'Covid-19 Tracker',
-    description: 'This project is a simple Covid-19 tracker. It uses an API to get the latest data about Covid-19 cases in the world or in a specific country.',
+    description: 'A real-time Covid-19 tracking platform displaying worldwide and country-specific case updates. ' +
+      'Built with React, it features interactive data visualization and real-time API integration.',
     image: '/images/4.jpg',
     tags: ['React'],
     id: 3,
     alt: 'Covid-19 Tracker'
-  }
-]
+  },
+  // {
+  //   title: 'Freelance Web & Mobile Projects',
+  //   description: 'Worked on various freelance projects, developing responsive web and mobile applications. ' +
+  //     'Implemented frontend state management, API integration, and JWT authentication using React and Node.js.',
+  //   image: '/images/freelance.png',
+  //   tags: ['React', 'React Native', 'Node.js'],
+  //   id: 8,
+  //   alt: 'Freelance Projects'
+  // }
+];
 
 export const TimeLineData = [
   { year: 2017, text: 'Got my baccalaureate' },

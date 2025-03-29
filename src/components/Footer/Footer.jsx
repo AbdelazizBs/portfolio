@@ -25,8 +25,8 @@ const Footer = () => (
     <div className='flex sm:max-w-[1040px] sm:flex-row sm:justify-between xs:w-full xs:flex-col'>
       <div className='flex sm:flex-wrap sm:mr-auto sm:align-baseline xs:flex-col xs:items-center xs:mb-8'>
         <p
-          className='text-white p-4 tracking-wide opacity-50 sm:min-w-[280px] md:text-3xl sm:text-2xl xs:min-w-[100px] xs:text-xl '>Copyright &copy;
-          <span className='text-white opacity-75'>2023 -  Bs-Abdelaziz</span>
+          className='text-white p-4 tracking-wide opacity-50 sm:min-w-[280px] md:text-3xl sm:text-2xl xs:min-w-[100px] xs:text-xl '>Copyright &copy; {new Date().getFullYear()}
+          <span className='text-white opacity-75'> Bs-Abdelaziz</span>
       </p>
     </div>
     <div className='flex items-center xs:p-4 xs:justify-center xs:flex-wrap'>

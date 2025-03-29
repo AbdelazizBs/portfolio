@@ -4,7 +4,6 @@ import { Section } from '../../styles/GlobalComponents'
 import ContactMe from '../ContactMe'
 
 
-
 const Acomplishments = () =>
   <Section>
 

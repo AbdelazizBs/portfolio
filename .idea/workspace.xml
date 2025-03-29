@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41a6d184-b5e0-40dc-997b-011bcd1ee4f1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/images/gpao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/navex.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/PortfolioBassem.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Acomplishments/Acomplishments.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Acomplishments/Acomplishments.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/constants.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +90,8 @@
       <option name="presentableId" value="Default" />
       <updated>1743099727797</updated>
       <workItem from="1743099728935" duration="12669000" />
-      <workItem from="1743120185897" duration="93000" />
+      <workItem from="1743120185897" duration="129000" />
+      <workItem from="1743275550680" duration="2226000" />
     </task>
     <servers />
   </component>
